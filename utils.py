@@ -48,7 +48,7 @@ def diarize_dataset(token, project_dir, ext, acapella, silences):
     else:
         file_path = f"{project_dir}output/htdemucs/file/vocals.{ext}"
 
-    pipeline = Pipeline.from_pretrained("pyannote/speaker-diarization-3.0", use_auth_token=token)
+    pipeline = Pipeline.from_pretrained("tensorlake/speaker-diarization-3.1", use_auth_token=token)
 
     pipeline.to(torch.device("cuda"))
     #diarization = pipeline(file_path, embedding_exclude_overlap=True)
