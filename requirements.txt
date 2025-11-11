@@ -54,7 +54,6 @@ mutagen==1.47.0
 networkx==3.2.1
 noisereduce==3.0.0
 numpy
-numba
 omegaconf==2.3.0
 onnxruntime
 openunmix==1.2.1
